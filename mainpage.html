@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
+<header>
+    <nav>
     <div class="left-nav">   
         <div class="logo">
+             <a href="mainpage.html">
             <img src="assets/nav/logo.png" width="275px" alt="logo">
+            </a>
         </div>
     </div>
     <div class="right-nav">
@@ -24,16 +27,55 @@
         </div>
         <div class="nav-buttons flex">
             <ul class=" flex">
-                <li>Home</li>
-                <li>Shop</li>
-                <li>Categories</li>
+                <li class="home" ><a href="mainpage.html" style="border-bottom: 2px solid #145e9d; color: #145e9d;">Home</a></li>
+                <li class="shop"><a href="">Shop</a></li>
+                <li class="categories"><a href="">Categories</a></li>
             </ul>
             <ul class=" flex">
-                <li>Login</li>
+                <li><a href="">Login</a></li>
                     <i class="fa-solid fa-cart-shopping"></i>
             </ul>
         </div>
     </div>    
 </nav>
+</header>
+<main>
+
+</main>
+<footer>
+<div class="feedback flex">
+    <p>We'd love to hear what you think!</p>
+    <button class="btn">Give feedback</button>
+</div>
+<div class="main-footer">
+    <ul class="footer-upper-container">
+        <img src="assets/footer/logo.jpeg" width="150px" alt="logo" style="position: relative; left: -10px;">
+        <li class="footer-social-media" ></li>
+        <li style="font-weight: bold; color:white">Customer Service</li>
+        <li style="grid-column: 2/3;grid-row: 2/3;">FAQ</li>
+        <li style="grid-column: 2/3;grid-row: 3/4;">Contact Us</li>
+        <li style="font-weight: bold; color:white">About PakKart</li>
+        <li style="grid-column: 3/4;grid-row: 2/3;">Our Trust</li>
+        <li style="grid-column: 3/4;grid-row: 3/4;">Confidentiality</li>
+        <li  style="grid-column: 4/5;grid-row: 1/2;"><input type="text"  id="footer-input" placeholder="Email"> </li>
+        <button id="footer-btn" class="btn">Submit</button>        
+    </ul>
+
+    <div class="footer-lower">
+        <ul class="footer-lower-container">
+        <li>Connect with Us</li>
+        <li>Track Order</li>
+        <li>Bing</li>
+        <li class="footer-cards"></li>
+    </ul>
+    </div>
+    
+</div>
+<div class="copyright flex">
+    <div>Made with &lt;3</div>
+    <div>All &copy; rigths reserved</div>
+    <div>Developed by Hamid, Talha and Areesha</div>
+</div>
+</footer>
 </body>
 </html>
