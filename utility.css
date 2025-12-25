@@ -9,3 +9,7 @@
 .btn:hover{
     font-weight: bold;
 }
+
+.hide{
+    height: 0px;
+}
