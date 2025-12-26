@@ -33,15 +33,14 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" id="navbar-input" placeholder=" Search the Products">
                 </div>
-                <div class="nav-buttons flex">
+                <div class="nav-buttons-con flex">
                     <ul class=" flex">
-                        <li class="home"><a href="mainpage.html"
-                                style="border-bottom: 2px solid rgb(152, 152, 152); ">Home</a></li>
-                        <li class="shop"><a href="">Shop</a></li>
-                        <li class="categories"><a href="">Categories</a></li>
+                         <li><a  href="mainpage.html" id="home" class="home-line">Home</a></li><!-- home is not in nav-buttons cuz we want that home does not have line when other btns hovered -->
+                        <li ><a href=""id="shop" class="nav-buttons">Shop</a></li>
+                        <li ><a href=""id="categories" class="nav-buttons">Categories</a></li>
                     </ul>
                     <ul class=" flex">
-                        <li><a href="">Login</a></li>
+                        <li><a href="" class="nav-buttons">Login</a></li>
                         <i class="fa-solid fa-cart-shopping"></i>
                     </ul>
                 </div>
@@ -74,10 +73,12 @@
                         <span class="off">
                             20% off
                         </span>
+                        <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <p class="deal-time">Limited Deal Time</p>
                     </div>
                      <div class="deal-card">
                         <img src="assets/deals/310jt3DZU8L._AC_SR480,440_.jpg" alt="Scooty">
+                        <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             30% off
                         </span>
@@ -86,6 +87,7 @@
                     <div class="deal-card">
                         <img src="assets/deals/26Deals_WinterSale_13718_VisNav_Fashion._CB778016726_UC145,145_.jpg"
                             alt="Jacket">
+                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             35% off
                         </span>
@@ -94,6 +96,7 @@
                     <div class="deal-card">
                         <img src="assets/deals/26Deals_WinterSale_13724_VisNav_Electronics._CB778016726_UC145,145_.jpg"
                             alt="Headphones">
+                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             25% off
                         </span>
@@ -102,6 +105,7 @@
                     <div class="deal-card">
                         <img src="assets/deals/26Deals_WinterSale_13721_VisNav_NYNY._CB778016726_UC145,145_.jpg"
                             alt="Decor">
+                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             15% off
                         </span>
@@ -110,18 +114,20 @@
                 </div>
             </section>
                 <!-- Trending  -->
-                 <section class="trending-section">
+              <section class="trending-section">
             <div class="card-tag"> Trending Now</div>
-                    <div class="deals-container">
+                <div class="deals-container">
                     <div class="deal-card">
                         <img src="assets/deals/31e1ZrETqbL._AC_SR480,440_.jpg" alt="Iphone" >
                         <span class="off">
                             20% off
                         </span>
+                        <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <p class="deal-time">Limited Deal Time</p>
                     </div>
                      <div class="deal-card">
                         <img src="assets/deals/310jt3DZU8L._AC_SR480,440_.jpg" alt="Scooty">
+                        <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             30% off
                         </span>
@@ -130,6 +136,7 @@
                     <div class="deal-card">
                         <img src="assets/deals/26Deals_WinterSale_13718_VisNav_Fashion._CB778016726_UC145,145_.jpg"
                             alt="Jacket">
+                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             35% off
                         </span>
@@ -138,6 +145,7 @@
                     <div class="deal-card">
                         <img src="assets/deals/26Deals_WinterSale_13724_VisNav_Electronics._CB778016726_UC145,145_.jpg"
                             alt="Headphones">
+                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             25% off
                         </span>
@@ -146,13 +154,14 @@
                     <div class="deal-card">
                         <img src="assets/deals/26Deals_WinterSale_13721_VisNav_NYNY._CB778016726_UC145,145_.jpg"
                             alt="Decor">
+                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             15% off
                         </span>
                         <p class="deal-time">Limited Deal Time</p>
                     </div> 
                 </div>
-                 </section>
+            </section>
                  <!-- Cards -->
                  
                     
@@ -161,6 +170,7 @@
                 <div class="deals-container cards-container" >
                     <div class="deal-card " style="height: 350px;">
                         <img src="assets/deals/bluecard.jpg" alt="cards" width="225px">
+                         <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             20% off
                         </span>
@@ -168,6 +178,7 @@
                     </div>
                     <div class="deal-card" style="height: 350px;">
                         <img src="assets/deals/pinkflowercard.jpg" alt="cards" width="225px">
+                         <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             20% off
                         </span>
@@ -175,6 +186,7 @@
                     </div>
                     <div class="deal-card" style="height: 350px;">
                         <img src="assets/deals/purpleflowercard.jpg" alt="cards" width="225px">
+                         <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             20% off
                         </span>
@@ -182,6 +194,7 @@
                     </div>
                     <div class="deal-card" style="height: 350px;">
                         <img src="assets/deals/whiteflowercard.jpg" alt="cards" width="225px">
+                         <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
                         <span class="off">
                             20% off
                         </span>
@@ -193,12 +206,6 @@
        
                  
     </main>
-
-    
-
-
-
-
     <!-- FOOTER -->
     <footer>
        <section class="feedback-section">
@@ -207,7 +214,39 @@
             <button class="btn" onclick="visibleFeedback()">Give feedback</button>
         </div>
             <div class="feedback ">
-                  <div class="card-tag"> Feedback</div>
+                 <div class="feedback-con flex">
+                    <div class="left-feedback flex">
+                        <div class="left-feedback-img"></div>
+                    </div>
+                    <div class="right-feedback">
+                        <form class="right-feedback-con flex" autocomplete="on">
+                        <div class="feedback-head flex">
+                            <div class="bold">Feedback Type</div>
+                            <select name="feedback-type" id="feedback-type">
+                                <option value="Bugs">Bugs</option>
+                                <option value="Ideas">Ideas</option>
+                                <option value="Questions">Questions</option>
+                                <option value="Feelings">Feelings</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="feedback-email flex">
+                            <span>Your <span class="bold">Name </span>(Optional)</span>
+                            <input type="email" name="email" id="fd-email" autocomplete="email" placeholder="Your Email"> 
+                            <span>Your Email (Optional)</span>
+                        </div>
+                        <div class="feedback-des flex">
+                            <span style="font-size: 12px;">Tell us more...</span>
+                            <textarea  name="description" id="fd-des"></textarea>
+                        </div>
+                        <label >
+                            <input type="checkbox" name="feedbackInform" id="feedback-checkbox" value="feedbackInform" >
+                            Allow us to contact you about your feedback 
+                        </label>
+                        <input type="button" name="button" id="fd-btn" value="SUBMIT FEEDBACK">
+                    </form>
+                    </div>
+                 </div> 
             </div>
        </section>
         <div class="main-footer">
