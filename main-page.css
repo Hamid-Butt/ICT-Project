@@ -384,6 +384,10 @@ nav {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 4px 24px 40px 14px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+.feedback-con:hover{
+    transform: scale(1.03);
 }
 .left-feedback{
     height: 100%;

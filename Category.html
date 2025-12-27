@@ -4,13 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>PakKart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="PakKart" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <!-- STYLESHEETTS   -->
     <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="utility.css">
+    
     <title>Document</title>
 </head>
 
 <body>
-
+<header>
+        <nav>
+            <div class="left-nav">
+                <div class="logo">
+                    <a href="mainpage.html">
+                        <img src="assets/nav/logo.png" width="275px" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="right-nav">
+                <div class="nav-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="navbar-input" placeholder=" Search the Products">
+                </div>
+                <div class="nav-buttons-con flex">
+                    <ul class=" flex">
+                         <li><a  href="mainpage.html" id="home" class="nav-buttons">Home</a></li>
+                        <li ><a href=""id="shop" class="nav-buttons">Shop</a></li>
+                        <li ><a href="category.html" id="categories" class="category-line" >Categories</a></li>
+                        <!-- home is not in nav-buttons cuz we want that home does not have line when other btns hovered -->
+                    </ul>
+                    <ul class=" flex">
+                        <li><a href="" class="nav-buttons">Login</a></li>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="hero">
         <div class="hero-img">
             <div class="hero-msg" >
@@ -38,6 +77,7 @@
      <img src="assets/category/s-l2400 (6).jpg" class="explore-img">
      <img src="assets/category/s-l2400.jpg" class="explore-img">
     </div>
+<script src="category.js"></script>
 </body>
 
 </html>
