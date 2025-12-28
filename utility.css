@@ -4,7 +4,6 @@
 .btn{
     cursor: pointer;
     transition: font-size 0.3s ease;
-
 }
 .btn:hover{
     font-weight: bold;

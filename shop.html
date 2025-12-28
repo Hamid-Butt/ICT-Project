@@ -14,13 +14,13 @@
     <meta name="apple-mobile-web-app-title" content="PakKart" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <!-- STYLESHEETTS   -->
-    <link rel="stylesheet" href="main-page.css">
+    <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="utility.css">
 </head>
 
 <body>
     <header>
-       <nav>
+        <nav>
             <div class="left-nav">
                 <div class="logo">
                     <a href="mainpage.html">
@@ -35,9 +35,10 @@
                 </div>
                 <div class="nav-buttons-con flex">
                     <ul class=" flex">
-                         <li><a  href="mainpage.html" id="home" class="home-line">Home</a></li><!-- home is not in nav-buttons cuz we want that home does not have line when other btns hovered -->
-                        <li ><a href="shop.html" id="shop" class="nav-buttons">Shop</a></li>
-                        <li ><a href="category.html" id="categories" class="nav-buttons">Categories</a></li>
+                        <li><a href="mainpage.html" id="home" class="nav-buttons">Home</a></li>
+                        <li><a href="shop.html" id="shop" class="home-line">Shop</a></li>
+                        <!-- home is not in nav-buttons cuz we want that home does not have line when other btns hovered -->
+                        <li><a href="category.html" id="categories" class="nav-buttons">Categories</a></li>
                     </ul>
                     <ul class=" flex">
                         <li><a href="" class="nav-buttons">Login</a></li>
@@ -48,10 +49,28 @@
         </nav>
         <div class="nav-spacer"></div>
     </header>
-    <!-- MAIN SECTION -->
+    <section class="product-onclick">
+        <div class="product-onclick-div flex">
+            <div class="product-onclick-l-con flex">
+                <div class="img"></div>
+            </div>
+            <div class="product-onclick-r-con  flex">
+                <h3></h3>
+                <div class="flex" style="gap: 40px; position: relative; left: -12px; cursor: default;">
+                    <div class="company-title">
+                    </div>
+                    <div class="company-name">
+                    </div>
+                </div>
+                <div class="onclick-des"> 
+                  
+                </div>
+                
+            </div>
+        </div>
+    </section>
     <main>
-         <section class="hero">
-
+        <section class="hero">
             <div class="hero-section">
                 <div class="hero-image-con">
                     <div style="background-image: url('assets/hero-section/img1.jpg');"></div>
@@ -64,192 +83,139 @@
                     <div style="background-image: url('assets/hero-section/img8.jpg');"></div>
                 </div>
             </div>
-            <div class="hero-blur "></div>
-        </section> 
-            <!--featred deals -->
-         <section class="deals-section">
-                <div class="deals-container">
-                    <div class="deal-card">
-                        <img src="assets/deals/31e1ZrETqbL._AC_SR480,440_.jpg" alt="Iphone" >
-                        <span class="off">
-                            20% off
-                        </span>
-                        <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div>
-                     <div class="deal-card">
-                        <img src="assets/deals/310jt3DZU8L._AC_SR480,440_.jpg" alt="Scooty">
-                        <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            30% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div> 
-                    <div class="deal-card">
-                        <img src="assets/deals/26Deals_WinterSale_13718_VisNav_Fashion._CB778016726_UC145,145_.jpg"
-                            alt="Jacket">
-                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            35% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div>
-                    <div class="deal-card">
-                        <img src="assets/deals/26Deals_WinterSale_13724_VisNav_Electronics._CB778016726_UC145,145_.jpg"
-                            alt="Headphones">
-                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            25% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div>
-                    <div class="deal-card">
-                        <img src="assets/deals/26Deals_WinterSale_13721_VisNav_NYNY._CB778016726_UC145,145_.jpg"
-                            alt="Decor">
-                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            15% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div> 
+        </section>
+        <section class="tag-section tag-section-absolute beauty-tag">
+
+            <div class="tag">
+                <div class="tag-image-con">
+                    <div>BEAUTY</div>
+                    <div>BEAUTY</div>
+                    <div>BEAUTY</div>
+                    <div>BEAUTY</div>
+                    <div>BEAUTY</div>
+                    <div>BEAUTY</div>
+                    <div>BEAUTY</div>
+                    <div>BEAUTY</div>
                 </div>
-            </section>
-                <!-- Trending  -->
-              <section class="trending-section">
-            <div class="card-tag"> Trending Now</div>
-                <div class="deals-container">
-                    <div class="deal-card">
-                        <img src="assets/deals/31e1ZrETqbL._AC_SR480,440_.jpg" alt="Iphone" >
-                        <span class="off">
-                            20% off
-                        </span>
-                        <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div>
-                     <div class="deal-card">
-                        <img src="assets/deals/310jt3DZU8L._AC_SR480,440_.jpg" alt="Scooty">
-                        <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            30% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div> 
-                    <div class="deal-card">
-                        <img src="assets/deals/26Deals_WinterSale_13718_VisNav_Fashion._CB778016726_UC145,145_.jpg"
-                            alt="Jacket">
-                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            35% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div>
-                    <div class="deal-card">
-                        <img src="assets/deals/26Deals_WinterSale_13724_VisNav_Electronics._CB778016726_UC145,145_.jpg"
-                            alt="Headphones">
-                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            25% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div>
-                    <div class="deal-card">
-                        <img src="assets/deals/26Deals_WinterSale_13721_VisNav_NYNY._CB778016726_UC145,145_.jpg"
-                            alt="Decor">
-                            <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            15% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div> 
-                </div>
-            </section>
-                 <!-- Cards -->
-                 
-                    
-        <section class="card-section" style="position: relative; top: 0;">
-            <div class="card-tag"> Save up to 20% on select gift cards</div>
-                <div class="deals-container cards-container" >
-                    <div class="deal-card " style="height: 350px;">
-                        <img src="assets/deals/bluecard.jpg" alt="cards" width="225px">
-                         <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            20% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div>
-                    <div class="deal-card" style="height: 350px;">
-                        <img src="assets/deals/pinkflowercard.jpg" alt="cards" width="225px">
-                         <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            20% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div>
-                    <div class="deal-card" style="height: 350px;">
-                        <img src="assets/deals/purpleflowercard.jpg" alt="cards" width="225px">
-                         <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            20% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div>
-                    <div class="deal-card" style="height: 350px;">
-                        <img src="assets/deals/whiteflowercard.jpg" alt="cards" width="225px">
-                         <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
-                        <span class="off">
-                            20% off
-                        </span>
-                        <p class="deal-time">Limited Deal Time</p>
-                    </div>
-                    
-                </div>
-            </section>
-       
-                 
-    </main>
-    <!-- FOOTER -->
-    <footer>
-       <section class="feedback-section">
-         <div class=" feedback-btn-p flex  ">
-            <p>We'd love to hear what you think!</p>
-            <button class="btn" onclick="visibleFeedback()">Give feedback</button>
-        </div>
-            <div class="feedback ">
-                 <div class="feedback-con flex">
-                    <div class="left-feedback flex">
-                        <div class="left-feedback-img"></div>
-                    </div>
-                    <div class="right-feedback">
-                        <form class="right-feedback-con flex" autocomplete="on">
-                        <div class="feedback-head flex">
-                            <div class="bold">Feedback Type</div>
-                            <select name="feedback-type" id="feedback-type">
-                                <option value="Bugs">Bugs</option>
-                                <option value="Ideas">Ideas</option>
-                                <option value="Questions">Questions</option>
-                                <option value="Feelings">Feelings</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="feedback-email flex">
-                            <span>Your <span class="bold">Name </span>(Optional)</span>
-                            <input type="email" name="email" id="fd-email" autocomplete="email" placeholder="Your Email"> 
-                            <span>Your Email (Optional)</span>
-                        </div>
-                        <div class="feedback-des flex">
-                            <span style="font-size: 12px;">Tell us more...</span>
-                            <textarea  name="description" id="fd-des"></textarea>
-                        </div>
-                        <label >
-                            <input type="checkbox" name="feedbackInform" id="feedback-checkbox" value="feedbackInform" >
-                            Allow us to contact you about your feedback 
-                        </label>
-                        <input type="button" name="button" id="fd-btn" value="SUBMIT FEEDBACK">
-                    </form>
-                    </div>
-                 </div> 
             </div>
-       </section>
+        </section>
+        <section class="deals-section">
+            <div class="deals-container">
+                <div class="deal-card" onclick="productDes(this)">
+                    <img src="" alt="">
+                    <div class="deal-hidden" style="display: none;">
+                        <div></div>
+                        <span></span>
+                    </div>
+                    <span class="off">
+
+                    </span>
+                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
+                    <div class="deal-name"></div>
+                    <div class="deal-price flex">
+                        <span class="cut-price"
+                            style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
+
+                            </span></span>
+                        <span class="rem-price"><sup>PKR</sup><span>
+
+                            </span></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="tag-section automotive-tag">
+
+            <div class="tag">
+                <div class="tag-image-con">
+                    <div>AUTOMOTIVE</div>
+                    <div>AUTOMOTIVE</div>
+                    <div>AUTOMOTIVE</div>
+
+                </div>
+            </div>
+        </section>
+        <section class="deals-section">
+            <div class="deals-container">
+
+
+            </div>
+        </section>
+        <section class="tag-section automotive-tag">
+
+            <div class="tag">
+                <div class="tag-image-con">
+                    <div>ELECTRONICS</div>
+                </div>
+            </div>
+        </section>
+        <section class="deals-section">
+            <div class="deals-container">
+
+
+            </div>
+        </section>
+        <section class="tag-section automotive-tag">
+
+            <div class="tag">
+                <div class="tag-image-con">
+                    <div>FASHION</div>
+                </div>
+            </div>
+        </section>
+        <section class="deals-section">
+            <div class="deals-container">
+
+
+            </div>
+        </section>
+        <section class="tag-section automotive-tag">
+
+            <div class="tag">
+                <div class="tag-image-con">
+                    <div>SPORTS</div>
+                </div>
+            </div>
+        </section>
+        <section class="deals-section">
+            <div class="deals-container">
+
+
+            </div>
+        </section>
+        <section class="tag-section automotive-tag">
+
+            <div class="tag">
+                <div class="tag-image-con">
+                    <div>STATIONARY</div>
+                </div>
+            </div>
+        </section>
+        <section class="deals-section">
+            <div class="deals-container">
+
+
+            </div>
+        </section>
+        <section class="tag-section automotive-tag">
+
+            <div class="tag">
+                <div class="tag-image-con">
+                    <div>TOYS</div>
+                </div>
+            </div>
+        </section>
+        <section class="deals-section">
+            <div class="deals-container">
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
         <div class="main-footer">
             <div class="upper-footer-container">
                 <ul>
@@ -476,7 +442,8 @@
         </div>
 
     </footer>
-    <script src="mainpage.js"></script>
+    <script src="products.js"></script>
+    <script src="shop.js"></script>
 </body>
 
 </html>

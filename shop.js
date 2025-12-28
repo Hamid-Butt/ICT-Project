@@ -1,0 +1,127 @@
+let lastScrollY = window.scrollY;
+let nav = document.getElementsByTagName("nav")[0];
+window.addEventListener("scroll", () => {
+if(window.scrollY > 100){
+    let currentScrollY = window.scrollY;
+    if(currentScrollY > lastScrollY)
+        nav.style.transform = "translateY(-100%)";
+        else
+            nav.style.transform = "translateY(0px)";
+    lastScrollY = currentScrollY;
+}
+})
+
+//SHOP bottom line Effect
+const navShop = document.getElementById("shop");
+const navBtns = document.getElementsByClassName("nav-buttons");
+for (const key in navBtns) {
+    if (!Object.hasOwn(navBtns, key)) continue;
+    const element = navBtns[key];
+    element.addEventListener("mouseover", () => {
+        navShop.classList.remove("home-line");
+    })
+    element.addEventListener("mouseout", () => {
+        navShop.classList.add("home-line");
+    })
+}
+//Red Heart
+function redHeart(heart) {
+    heart.classList.toggle("red-heart");
+}
+
+//Deals-Section
+function createProductsDisplay(obj,productDisplay,dealSec){
+    let newProductDisplay = productDisplay.cloneNode(true);
+    let img = newProductDisplay.querySelector("img");
+    img.src = obj.src;
+    img.alt = obj.name;
+    let cutPrice = newProductDisplay.querySelector(".cut-price").querySelector("span");
+    let remPrice = newProductDisplay.querySelector(".rem-price").querySelector("span");
+    let productName = newProductDisplay.querySelector(".deal-name").innerHTML = obj.name;
+    let off = newProductDisplay.querySelector(".off");
+    if(obj.off){
+        let discount = parseInt(obj.off)/100*parseInt(obj.price);
+        let disPrice = parseInt(obj.price) - parseInt(discount);
+        if(disPrice % 10 == 0)
+            disPrice--;
+        remPrice.innerHTML = " " + disPrice;
+        cutPrice.innerHTML = " " +  obj.price;
+        off.innerHTML = obj.off + "% off";
+    }
+    else{
+        off.remove();
+               remPrice.innerHTML = " " + obj.price;
+        newProductDisplay.querySelector(".cut-price").remove();
+    }
+    newProductDisplay.querySelector(".deal-hidden").querySelector("div").innerText = obj.companyName;
+    newProductDisplay.querySelector(".deal-hidden").querySelector("span").innerText = obj.des;
+    dealSec.querySelector(".deals-container").insertAdjacentElement("beforeend",newProductDisplay);
+}
+
+// const products = [
+//     {name : "Face Wash", companyName : "ORGATRE", category : "beauty",src : "assets/IMAGES/Beauty/antiaging Face wash.png",off: 10,price : 1299, des : "lorem1234"},
+//     {name : "Body Lotion", companyName : "eos", category : "beauty",src : "assets/IMAGES/Beauty/Body lotion.png",off: 20, price : 449, des : "lorem1234"},
+//     {name : "Body Scrub", companyName : "Dove", category : "beauty",src : "assets/IMAGES/Beauty/Body Scrub.png",off: 10, price : 599, des : "lorem1234"},
+//     {name : "Eyeshadow", companyName : "Huda Beauty", category : "beauty",src : "assets/IMAGES/Beauty/Eyeshadow.png",off: 0, price : 699, des : "lorem1234"},
+//     {name : "Lip Oil", companyName : "elf", category : "beauty",src : "assets/IMAGES/Beauty/Lip oil.png",off: 0, price: 600, des : "lorem1234"},
+//     {name : "Lip Gloss", companyName : "elf", category : "beauty",src : "assets/IMAGES/Beauty/Lip gloss.png",off: 0, price : 500, des : "lorem1234"},
+//     {name : "Makeup Brush Set", companyName : "Huda Beauty", category : "beauty",src : "assets/IMAGES/Beauty/Makeup brush set.png",off: 50, price : 500, des : "lorem1234"},
+//     {name : "Retinol Serum", companyName : "CeraVe", category : "beauty",src : "assets/IMAGES/Beauty/Retinol serum.png",off: 0, price : 500, des : "lorem1234"},
+//     {name : "Vitamin-C Super Serum", companyName : "Saeed Ghani", category : "beauty",src : "assets/IMAGES/Beauty/Vitamin C super serum.png",off: 0, price : 500, des : "lorem1234"},
+    
+// ];
+let dealSections = document.querySelectorAll(".deals-section");
+let productDisplay = document.querySelector(".deal-card");//innerHtml is a text and we cant clone that
+ document.querySelector(".deals-container").innerHTML = "";
+    dealSections.forEach(dealSec=>{
+        let cate = dealSec.previousElementSibling.querySelector(".tag-image-con").firstElementChild.innerHTML.trim().toLowerCase();
+        products.forEach(e=>{
+            if(cate == e.category)
+                createProductsDisplay(e,productDisplay,dealSec);
+        })
+})
+
+//Product Description Box Appearence
+let productClick = document.querySelector(".product-onclick");
+let productClickChild = productClick.querySelector(".product-onclick-div");
+let productClickLeftImg = productClick.querySelector(".product-onclick-l-con").querySelector(".img");
+let productClickRight = productClick.querySelector(".product-onclick-r-con");
+function productDes(productDisplay2){
+    productClick.classList.add("product-onclick-toggle");
+    document.body.style.overflow = "hidden";
+    //Adding Style to Left and Right Boxes
+    productClick.querySelector(".product-onclick-l-con").classList.add("product-onclick-l-con-style");
+    productClick.querySelector(".product-onclick-r-con").classList.add("product-onclick-r-con-style");
+    //Fetching Data
+    let src = productDisplay2.querySelector("img").src;
+    productClickLeftImg.style.backgroundImage = `url(${src})`;
+    let productName = productDisplay2.querySelector(".deal-name").innerText;
+    productClickRight.querySelector("h3").innerText = productName.toUpperCase();
+    productClickRight.querySelector(".company-title").innerText = "Company Name: ";
+    let productCompany = productDisplay2.querySelector(".deal-hidden").querySelector("div").innerText;
+    productClickRight.querySelector(".company-name").innerText = productCompany;
+    let productDescription =  productDisplay2.querySelector(".deal-hidden").querySelector("span").innerText;
+    productClickRight.querySelector(".onclick-des").innerText = productDescription;
+    let onclickBtn = `<div class="onclick-btn btn">
+                     Add To Cart 
+                </div>`;
+    productClickRight.insertAdjacentHTML("beforeend",onclickBtn);
+
+}
+//Stoping Propogation of Child to Parent
+productClickChild.addEventListener("click",e=>{
+    e.stopPropagation();
+})
+//Product Description Box Dsappearence
+productClick.addEventListener("click",e=>{
+    productClick.classList.remove("product-onclick-toggle");
+    productClick.querySelector(".product-onclick-l-con").classList.remove("product-onclick-l-con-style");
+    productClick.querySelector(".product-onclick-r-con").classList.remove("product-onclick-r-con-style");
+     productClickRight.querySelector("h3").innerText = "";
+    productClickRight.querySelector(".company-title").innerText = "";
+    productClickRight.querySelector(".company-name").innerText = "";
+    productClickRight.querySelector(".onclick-des").innerText = "";
+    productClickRight.querySelector(".onclick-btn").remove();
+    document.body.style.overflow = "auto";
+    
+})
