@@ -494,6 +494,10 @@ label{
     left: 71px;
     cursor: pointer;
 }
+#fd-btn:active{
+    color: #232F3E;
+    background-color: #f8f8f9;
+}
 .main-footer {
     background-color: #232F3E;
 }

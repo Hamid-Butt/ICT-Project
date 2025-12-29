@@ -142,6 +142,33 @@ nav {
     cursor: pointer;
     transform: translateY(-2px) scale(1.1);
 }
+/* FAVORITE PRODUCTS */
+.favProducts-style{
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    z-index: 1001;
+    overflow: hidden;
+}
+.favProducts-hide{
+    height: 0px;
+}
+.favProducts-style div{
+    width: 300px;
+       background: linear-gradient(135deg,#b2dbf8 0%, #f4ce92 100%);
+       font-weight: bold ;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.5s;
+}
+.favProducts-show{
+    height: 100px;
+}
+
 /* PRODUCT ONCLICK */
 .product-onclick-toggle{
     width: 100vw;
@@ -198,10 +225,17 @@ nav {
     margin: 20px 0;
     cursor: default;
 }
-.product-onclick-r-con-style .company-name{
+.product-onclick-r-con-style .company-con{
+    margin-bottom: 5px;
+    cursor: default;
+}
+.product-onclick-r-con-style .company-name,
+.product-onclick-r-con-style .price-name,
+.product-onclick-r-con-style .discount-name{
     font-weight: bold;
     font-size: 16px;
 }
+
 .product-onclick-r-con-style .onclick-des{
     padding: 20px 35px;
     font-size: 12px;
@@ -211,6 +245,11 @@ nav {
     border-radius: 999px;
     padding: 10px 20px;
     margin: 20px 0 0 0;
+    transition: color 0.2s,background-color 0.2s;
+}
+.product-onclick-r-con-style .onclick-btn:active{
+    background-color: #DDDDDD;
+    color: #232F3E;
 }
 /* MAIN */
 

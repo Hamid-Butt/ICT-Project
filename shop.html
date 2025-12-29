@@ -49,6 +49,11 @@
         </nav>
         <div class="nav-spacer"></div>
     </header>
+    <section class="favProducts ">
+        <div class="favProducts-hide">
+            
+        </div>
+    </section>
     <section class="product-onclick">
         <div class="product-onclick-div flex">
             <div class="product-onclick-l-con flex">
@@ -56,12 +61,27 @@
             </div>
             <div class="product-onclick-r-con  flex">
                 <h3></h3>
-                <div class="flex" style="gap: 40px; position: relative; left: -12px; cursor: default;">
-                    <div class="company-title">
+                <div class="flex company-con" style="gap: 40px; position: relative; left: -12px; ">
+                    <div class="company-title"> 
                     </div>
                     <div class="company-name">
                     </div>
                 </div>
+                <div class="flex company-con" style="gap: 42px; position: relative; left: 9px;">
+                    <div class="discount-title">
+                        
+                    </div>
+                    <div class="discount-name">
+                        
+                    </div>
+                </div>
+                <div class="flex company-con" style="gap: 42px; position: relative;">
+                    <div class="price-title">
+                    </div>
+                    <div class="price-name">
+                    </div>
+                </div>
+                
                 <div class="onclick-des"> 
                   
                 </div>
@@ -110,7 +130,7 @@
                     <span class="off">
 
                     </span>
-                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(this)"></i>
+                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
                     <div class="deal-name"></div>
                     <div class="deal-price flex">
                         <span class="cut-price"
