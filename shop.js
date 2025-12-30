@@ -34,7 +34,7 @@ document.querySelector(".deals-container").innerHTML = "";
 dealSections.forEach(dealSec => {
     let cate = dealSec.previousElementSibling.querySelector(".tag-image-con").firstElementChild.innerHTML.trim().toLowerCase();
     products.forEach(e => {
-        if (cate == e.category)
+        if (cate == e.category.toLowerCase())
             createProductsDisplay(e, productDisplay, dealSec);
     })
 })
