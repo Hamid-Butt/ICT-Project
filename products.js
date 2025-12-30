@@ -68,4 +68,10 @@ const products = [
      {name : "Posable Doll Set", companyName : "", category : "Toys",src : "assets/IMAGES/Toys/Posable doll set.png",off: 0, trending: false, price : 2000, des : ""},
      {name : "RC car", companyName : "", category : "Toys",src : "assets/IMAGES/Toys/RC car.png",off: 10, trending: false, price : 5000, des : ""},
 
+     {name : "Gift Card", companyName : "GiftWave", category : "giftcards",src : "assets/IMAGES/GiftCards/bluecard.jpg",off: 10, trending: false, price : 9000, des : ""},
+     {name : "Gift Card", companyName : "GiftWave", category : "giftcards",src : "assets/IMAGES/GiftCards/pinkflowercard.jpg",off: 20, trending: false, price : 9000, des : ""},
+     {name : "Gift Card", companyName : "GiftWave", category : "giftcards",src : "assets/IMAGES/GiftCards/purpleflowercard.jpg",off: 20, trending: false, price : 9000, des : ""},
+     {name : "Gift Card", companyName : "GiftWave", category : "giftcards",src : "assets/IMAGES/GiftCards/whiteflowercard.jpg",off: 15, trending: false, price : 9000, des : ""},
+    
+
 ];
