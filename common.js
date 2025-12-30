@@ -118,7 +118,11 @@ function productDes(productDisplay2) {
      document.querySelector(".favProducts").querySelector("div").classList.add("favProducts-show");
      document.querySelector(".favProducts").querySelector("div").classList.remove("favProducts-hide");
      if(IncDeincInput.value > 0)
+     {
          document.querySelector(".favProducts").querySelector("div").innerHTML = "ADDED TO CART";
+         BoxClose();
+        IncDeincInput.value = 1;
+     }
         else
              document.querySelector(".favProducts").querySelector("div").innerHTML = "SELECT QUANTITY OF PRODUCTS";
     }else{
@@ -143,8 +147,30 @@ function productDes(productDisplay2) {
 productClickChild.addEventListener("click", e => {
     e.stopPropagation();
 })
-
 //Product Description Box Dsappearence
+//Working with Add to Cart Btn
+function BoxClose(){
+    
+    productClick.classList.remove("product-onclick-toggle");
+    productClick.querySelector(".product-onclick-l-con").classList.remove("product-onclick-l-con-style");
+    productClick.querySelector(".product-onclick-r-con").classList.remove("product-onclick-r-con-style");
+    productClickRight.querySelector("h3").innerText = "";
+    productClickRight.querySelector(".company-title").innerText = "";
+    productClickRight.querySelector(".company-name").innerText = "";
+    productClickRight.querySelector(".price-title").innerText = ""
+    productClickRight.querySelector(".price-name").innerText = "";
+    productClickRight.querySelector(".onclick-des").innerText = "";
+    productClickRight.querySelector(".discount-title").innerText = "";
+    productClickRight.querySelector(".discount-name").innerText = "";
+     productClickRight.querySelector(".inc-box").innerText = "";
+     productClickRight.querySelector("#inc-deinc-input").classList.replace("inc-deinc-input-show","inc-deinc-input");
+     productClickRight.querySelector(".deinc-box").innerText = "";
+     productClickRight.lastElementChild.classList.remove("onclick-btn","btn");
+     productClickRight.lastElementChild.innerText = "";
+     document.body.style.overflow = "auto";
+     
+    }
+  //Work With user click on light black space  
 productClick.addEventListener("click", e => {
     productClick.classList.remove("product-onclick-toggle");
     productClick.querySelector(".product-onclick-l-con").classList.remove("product-onclick-l-con-style");
