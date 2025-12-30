@@ -1,4 +1,16 @@
-
+//SHOP bottom line Effect
+const navShop = document.getElementById("shop");
+const navBtns = document.getElementsByClassName("nav-buttons");
+for (const key in navBtns) {
+    if (!Object.hasOwn(navBtns, key)) continue;
+    const element = navBtns[key];
+    element.addEventListener("mouseover", () => {
+        navShop.classList.remove("home-line");
+    })
+    element.addEventListener("mouseout", () => {
+        navShop.classList.add("home-line");
+    })
+}
 //Deals-Section
 function createProductsDisplay(obj, productDisplay, dealSec) {
     let newProductDisplay = productDisplay.cloneNode(true);

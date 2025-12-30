@@ -11,19 +11,7 @@ window.addEventListener("scroll", () => {
     }
 })
 
-//SHOP bottom line Effect
-const navShop = document.getElementById("shop");
-const navBtns = document.getElementsByClassName("nav-buttons");
-for (const key in navBtns) {
-    if (!Object.hasOwn(navBtns, key)) continue;
-    const element = navBtns[key];
-    element.addEventListener("mouseover", () => {
-        navShop.classList.remove("home-line");
-    })
-    element.addEventListener("mouseout", () => {
-        navShop.classList.add("home-line");
-    })
-}
+
 //Red Heart
 function redHeart(e,heart) {
     e.stopPropagation();
@@ -105,16 +93,22 @@ function productDes(productDisplay2) {
         else
             e.style.color = "gray";
     }
-    //Add to CArt Btn working of upper animation
+    //Add to CArt Btn working of upper animation and Taking to login page
+    let username = "";
     function addToCart(){
         //Copy from heartanimation section
          document.querySelector(".favProducts").classList.add("favProducts-style");
      document.querySelector(".favProducts").querySelector("div").classList.add("favProducts-show");
      document.querySelector(".favProducts").querySelector("div").classList.remove("favProducts-hide");
-    if(IncDeincInput.value > 0)
+   if(username.length > 0){
+     if(IncDeincInput.value > 0)
          document.querySelector(".favProducts").querySelector("div").innerHTML = "ADDED TO CART";
         else
              document.querySelector(".favProducts").querySelector("div").innerHTML = "SELECT QUANTITY OF PRODUCTS";
+   }
+   else{
+        window.location.href = "Login.html";
+   }
      setTimeout(() => {
        document.querySelector(".favProducts").querySelector("div").innerHTML = "";
        document.querySelector(".favProducts").classList.remove("favProducts-style");
