@@ -29,7 +29,7 @@ const products = [
      {name : "Wifi Amplifier", companyName : "TP-Link", category : "Electronics",src : "",off: 40, trending: false, price : 900, des : ""},
      {name : "Multi Charging Cable", companyName : "Temdan", category : "Electronics",src : "assets/IMAGES/Electronics/WIFI amplifier.png",off: 0, trending: false, price : 500, des : ""},
      {name : "CCTV Camera", companyName : "ANNKE", category : "Electronics",src : "assets/IMAGES/Electronics/CCTV Camera.png",off: 0, trending: false, price : 9000, des : ""},
-     
+
      {name : "Baggy Pents For Women", companyName : "MK Garments", category : "Fashion",src : "assets/IMAGES/Fashion/Baggy pent for women.png",off: 10, trending: false, price : 600, des : ""},
      {name : "Blazer For Men", companyName : "COOFANDY", category : "Fashion",src : "assets/IMAGES/Fashion/Blazer for men.png",off: 50, trending: false, price : 600, des : ""},
      {name : "Brown Upper With White Shirt", companyName : "MMART", category : "Fashion",src : "assets/IMAGES/Fashion/Brown upper with white shirt.jpg",off: 0, trending: true, price : 5000, des : ""},
@@ -42,7 +42,7 @@ const products = [
 
      {name : "Basket ball set", companyName : "Franklin Sports", category : "Sports",src : "assets/IMAGES/sports/Basketball set.png",off: 10, trending: false, price : 600, des : ""},
      {name : "Cricket set", companyName : "ReeBok", category : "Sports",src : "assets/IMAGES/sports/Cricket set.png",off: 0, trending: false, price : 800, des : ""},
-     {name : "FootBAll", companyName : "Lenwen", category : "Sports",src : "assets/IMAGES/sports/Football.png",off: 10, trending: false, price : 1500, des : ""},
+     {name : "FootBall", companyName : "Lenwen", category : "Sports",src : "assets/IMAGES/sports/Football.png",off: 10, trending: false, price : 1500, des : ""},
      {name : "Hardball", companyName : "SG Shield", category : "Sports",src : "assets/IMAGES/sports/Hard Ball.png",off: 40, trending: false, price : 600, des : ""},
      {name : "Hockey set", companyName : "Franklin Sports", category : "Sports",src : "assets/IMAGES/sports/Hockey set.png",off: 10, trending: false, price : 600, des : ""},
      {name : "Magnetic Dart Board Set", companyName : "BATURU", category : "Sports",src : "assets/IMAGES/sports/Magnetic dart board set.png",off: 10, trending: false, price : 600, des : ""},
