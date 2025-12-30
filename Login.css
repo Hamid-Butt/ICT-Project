@@ -1,4 +1,10 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
 
 
 body {
@@ -7,10 +13,142 @@ body {
 padding: 0;
 background-color: #ffffff;
 color: #111;
+overflow-x: hidden;
+}
+nav {
+    background-color: #232F3E;
+    color: white;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+.nav-spacer{
+     height: 100px;
+    width: 100%;
+    transition: transform 0.3s;
+}
+.left-nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.right-nav {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
 
 .logo {
+    width: 200px;
+    }
+
+.nav-input {
+    height: 55%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-input i {
+    position: absolute;
+    top: 39%;
+    left: 27%;
+    color: rgb(32, 32, 32);
+
+}
+
+.nav-input i:hover {
+    cursor: pointer;
+}
+
+#navbar-input {
+    color: gray;
+    padding: 9px;
+    padding-left: 35px;
+    width: 50%;
+    font-size: 15px;
+    border-radius: 999px;
+    outline: none;
+}
+
+.nav-buttons-con {
+    align-items: center;
+    height: 50%;
+    gap: 140px;
+}
+
+.nav-buttons-con ul {
+    gap: 60px;
+}
+
+.nav-buttons-con ul li {
+    font-size: 16px;
+    list-style: none;
+}
+
+.nav-buttons-con ul li a     {
+    text-decoration: none;
+        color:  rgb(197, 187, 187);
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+#login{
+    color: white;
+       transform: translateY(-2px) scale(1.1);
+
+}
+.home-line::after{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+.nav-buttons:hover:after{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+.nav-buttons:hover {
+       transform: translateY(-2px) scale(1.1);
+    cursor: pointer;
+}
+
+.nav-buttons-con ul i {
+    color: white;
+    transition: color 0.3s ease;
+
+}
+.nav-buttons-con ul i{
+    margin-top: 5px;
+    transition: transform 0.2s ease;
+
+}
+.nav-buttons-con ul i:hover {
+    cursor: pointer;
+    transform: translateY(-2px) scale(1.1);
+
+}
+
+/* .logo {
 text-align: center;
 margin-top: 0px;
 margin-bottom: 10px;
@@ -23,7 +161,7 @@ padding: 10px;
 
 .logo img {
 width: 200px;
-}
+} */
 
 
 .container {
