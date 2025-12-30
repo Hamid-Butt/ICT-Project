@@ -15,7 +15,7 @@ const products = [
      {name : "Car Jump Starter", companyName : "", category : "Automotive",src : "assets/IMAGES/Automotive/Car jump Starter.png",off: 20, trending: false, price : 2000, des : ""},
      {name : "Carrera Hard Wax", companyName : "", category : "Automotive",src : "assets/IMAGES/Automotive/Carrera Hard wax.png",off: 0, trending: false, price : 9000, des : ""},
      {name : "Emergency Seat Belt Cutter", companyName : "", category : "Automotive",src : "assets/IMAGES/Automotive/Emergency seatbelt cutter and window hammer.png",off: 50, trending: false, price : 800, des : ""},
-     {name : "Floor mats", companyName : "", category : "Automotive",src : "assets/IMAGES/Automotive/Emergency seatbelt cutter and window hammer.png",off: 0, trending: false, price : 5500, des : ""},
+     {name : "Floor mats", companyName : "", category : "Automotive",src : "assets/IMAGES/Automotive/Floor mats.png",off: 0, trending: false, price : 5500, des : ""},
      {name : "Maintainance Log Book", companyName : "", category : "Automotive",src : "assets/IMAGES/Automotive/Maintenance Log Book.png",off: 30, trending: false, price : 1000, des : ""},
      {name : "Mobile Stand", companyName : "", category : "Automotive",src : "assets/IMAGES/Automotive/Mobile stand.png",off: 40, trending: false, price : 1100, des : ""},
      {name : "Portable Tyre Inflator", companyName : "", category : "Automotive",src : "assets/IMAGES/Automotive/Portable tire inflator.png",off: 0, trending: false, price : 9000, des : ""},
@@ -26,7 +26,7 @@ const products = [
      {name : "Tripod", companyName : "", category : "Electronics",src : "assets/IMAGES/Electronics/Tripod.png",off: 60, trending: false, price : 500, des : ""},
      {name : "Watch", companyName : "", category : "Electronics",src : "assets/IMAGES/Electronics/watch.jpg",off: 10, trending: false, price : 6000, des : ""},
      {name : "Portable Speaker", companyName : "", category : "Electronics",src : "assets/IMAGES/Electronics/Protable speaker.png",off: 0, trending: false, price : 600, des : ""},
-     {name : "Wifi Amplifier", companyName : "", category : "Electronics",src : "",off: 40, trending: false, price : 900, des : ""},
+     {name : "Wifi Amplifier", companyName : "", category : "Electronics",src : "assets/IMAGES/Electronics/WIFI amplifier.png",off: 40, trending: false, price : 900, des : ""},
      {name : "Multi Charging Cable", companyName : "", category : "Electronics",src : "assets/IMAGES/Electronics/WIFI amplifier.png",off: 0, trending: false, price : 500, des : ""},
      {name : "CCTV Camera", companyName : "", category : "Electronics",src : "assets/IMAGES/Electronics/CCTV Camera.png",off: 0, trending: false, price : 9000, des : ""},
 
