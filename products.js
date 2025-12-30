@@ -7,10 +7,10 @@ const products = [
     {name : "Lip Oil", companyName : "elf", category : "beauty",src : "assets/IMAGES/Beauty/Lip oil.png",off: 0, trending: false, price: 600, des : "lorem1234"},
     {name : "Lip Gloss", companyName : "elf", category : "beauty",src : "assets/IMAGES/Beauty/Lip gloss.png",off: 0, trending: false, price : 500, des : "lorem1234"},
     {name : "Makeup Brush Set", companyName : "Huda Beauty", category : "beauty",src : "assets/IMAGES/Beauty/Makeup brush set.png",off: 50, trending: false, price : 500, des : "lorem1234"},
-    {name : "Retinol Serum", companyName : "CeraVe", category : "beauty",src : "assets/IMAGES/Beauty/Retinol serum.png",off: 40, trending: false, price : 500,des : "lorem1234"},
+    {name : "Retinol Serum", companyName : "CeraVe", category : "beauty",src : "assets/IMAGES/Beauty/Retinol serum.png",off: 40, trending: true, price : 500,des : "lorem1234"},
     {name : "Vitamin-C Super Serum", companyName : "Saeed Ghani", category : "beauty",src : "assets/IMAGES/Beauty/Vitamin C super serum.png",off: 0, trending: false, price : 500, des : "lorem1234"},
   
-     {name : "Blind Spot Mirror", companyName : "LivTee", category : "Automotive",src : "assets/IMAGES/Automotive/Blind Spot mirror.png",off: 0, trending: false, price : 5000, des : ""},
+     {name : "Blind Spot Mirror", companyName : "LivTee", category : "Automotive",src : "assets/IMAGES/Automotive/Blind Spot mirror.png",off: 0, trending: true, price : 5000, des : ""},
      {name : "Car Care Kit", companyName : "Pakwheels", category : "Automotive",src : "assets/IMAGES/Automotive/Car Care kit.png",off: 10, trending: false, price : 900, des : ""},
      {name : "Car Jump Starter", companyName : "YONHAN", category : "Automotive",src : "assets/IMAGES/Automotive/Car jump Starter.png",off: 20, trending: false, price : 2000, des : ""},
      {name : "Carrera Hard Wax", companyName : "Carrera", category : "Automotive",src : "assets/IMAGES/Automotive/Carrera Hard wax.png",off: 0, trending: false, price : 9000, des : ""},
