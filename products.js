@@ -7,10 +7,10 @@ const products = [
     {name : "Lip Oil", companyName : "elf", category : "beauty",src : "assets/IMAGES/Beauty/Lip oil.png",off: 0, trending: false, price: 600, des : "lorem1234"},
     {name : "Lip Gloss", companyName : "elf", category : "beauty",src : "assets/IMAGES/Beauty/Lip gloss.png",off: 0, trending: false, price : 500, des : "lorem1234"},
     {name : "Makeup Brush Set", companyName : "Huda Beauty", category : "beauty",src : "assets/IMAGES/Beauty/Makeup brush set.png",off: 50, trending: false, price : 500, des : "lorem1234"},
-    {name : "Retinol Serum", companyName : "CeraVe", category : "beauty",src : "assets/IMAGES/Beauty/Retinol serum.png",off: 40, trending: false, price : 500,des : "lorem1234"},
+    {name : "Retinol Serum", companyName : "CeraVe", category : "beauty",src : "assets/IMAGES/Beauty/Retinol serum.png",off: 40, trending: true, price : 500,des : "lorem1234"},
     {name : "Vitamin-C Super Serum", companyName : "Saeed Ghani", category : "beauty",src : "assets/IMAGES/Beauty/Vitamin C super serum.png",off: 0, trending: false, price : 500, des : "lorem1234"},
   
-     {name : "Blind Spot Mirror", companyName : "LivTee", category : "Automotive",src : "assets/IMAGES/Automotive/Blind Spot mirror.png",off: 0, trending: false, price : 5000, des : ""},
+     {name : "Blind Spot Mirror", companyName : "LivTee", category : "Automotive",src : "assets/IMAGES/Automotive/Blind Spot mirror.png",off: 0, trending: true, price : 5000, des : ""},
      {name : "Car Care Kit", companyName : "Pakwheels", category : "Automotive",src : "assets/IMAGES/Automotive/Car Care kit.png",off: 10, trending: false, price : 900, des : ""},
      {name : "Car Jump Starter", companyName : "YONHAN", category : "Automotive",src : "assets/IMAGES/Automotive/Car jump Starter.png",off: 20, trending: false, price : 2000, des : ""},
      {name : "Carrera Hard Wax", companyName : "Carrera", category : "Automotive",src : "assets/IMAGES/Automotive/Carrera Hard wax.png",off: 0, trending: false, price : 9000, des : ""},
@@ -29,7 +29,7 @@ const products = [
      {name : "Wifi Amplifier", companyName : "TP-Link", category : "Electronics",src : "",off: 40, trending: false, price : 900, des : ""},
      {name : "Multi Charging Cable", companyName : "Temdan", category : "Electronics",src : "assets/IMAGES/Electronics/WIFI amplifier.png",off: 0, trending: false, price : 500, des : ""},
      {name : "CCTV Camera", companyName : "ANNKE", category : "Electronics",src : "assets/IMAGES/Electronics/CCTV Camera.png",off: 0, trending: false, price : 9000, des : ""},
-     
+
      {name : "Baggy Pents For Women", companyName : "MK Garments", category : "Fashion",src : "assets/IMAGES/Fashion/Baggy pent for women.png",off: 10, trending: false, price : 600, des : ""},
      {name : "Blazer For Men", companyName : "COOFANDY", category : "Fashion",src : "assets/IMAGES/Fashion/Blazer for men.png",off: 50, trending: false, price : 600, des : ""},
      {name : "Brown Upper With White Shirt", companyName : "MMART", category : "Fashion",src : "assets/IMAGES/Fashion/Brown upper with white shirt.jpg",off: 0, trending: true, price : 5000, des : ""},
@@ -42,7 +42,7 @@ const products = [
 
      {name : "Basket ball set", companyName : "Franklin Sports", category : "Sports",src : "assets/IMAGES/sports/Basketball set.png",off: 10, trending: false, price : 600, des : ""},
      {name : "Cricket set", companyName : "ReeBok", category : "Sports",src : "assets/IMAGES/sports/Cricket set.png",off: 0, trending: false, price : 800, des : ""},
-     {name : "FootBAll", companyName : "Lenwen", category : "Sports",src : "assets/IMAGES/sports/Football.png",off: 10, trending: false, price : 1500, des : ""},
+     {name : "FootBall", companyName : "Lenwen", category : "Sports",src : "assets/IMAGES/sports/Football.png",off: 10, trending: false, price : 1500, des : ""},
      {name : "Hardball", companyName : "SG Shield", category : "Sports",src : "assets/IMAGES/sports/Hard Ball.png",off: 40, trending: false, price : 600, des : ""},
      {name : "Hockey set", companyName : "Franklin Sports", category : "Sports",src : "assets/IMAGES/sports/Hockey set.png",off: 10, trending: false, price : 600, des : ""},
      {name : "Magnetic Dart Board Set", companyName : "BATURU", category : "Sports",src : "assets/IMAGES/sports/Magnetic dart board set.png",off: 10, trending: false, price : 600, des : ""},
