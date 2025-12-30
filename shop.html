@@ -41,7 +41,7 @@
                         <li><a href="category.html" id="categories" class="nav-buttons">Categories</a></li>
                     </ul>
                     <ul class=" flex">
-                        <li><a href="" class="nav-buttons">Login</a></li>
+                        <li><a href="Login.html" class="nav-buttons">Login</a></li>
                         <i class="fa-solid fa-cart-shopping"></i>
                     </ul>
                 </div>
@@ -85,7 +85,18 @@
                 <div class="onclick-des"> 
                   
                 </div>
-                
+                <div class="flex inc-deinc-box" >
+                    <div class="deinc-box" onclick="DeIncInput(this)">
+                        
+                    </div>
+                    <input type="text" id="inc-deinc-input" class="inc-deinc-input" value=0>
+                    <div class="inc-box" onclick="IncInput()">
+                        
+                    </div>
+                </div>
+                <div onclick="addToCart()">
+<!-- Add to cart btn -->
+                </div>
             </div>
         </div>
     </section>
@@ -109,7 +120,7 @@
             <div class="tag">
                 <div class="tag-image-con">
                     <div>BEAUTY</div>
-                    <div>BEAUTY</div>
+                    <div>MAKE YOU BEAUTIFUL</div>
                     <div>BEAUTY</div>
                     <div>BEAUTY</div>
                     <div>BEAUTY</div>
@@ -124,7 +135,6 @@
                 <div class="deal-card" onclick="productDes(this)">
                     <img src="" alt="">
                     <div class="deal-hidden" style="display: none;">
-                        <div></div>
                         <span></span>
                     </div>
                     <span class="off">
@@ -152,7 +162,11 @@
                     <div>AUTOMOTIVE</div>
                     <div>AUTOMOTIVE</div>
                     <div>AUTOMOTIVE</div>
-
+                    <div>AUTOMOTIVE</div>
+                    <div>AUTOMOTIVE</div>
+                    <div>AUTOMOTIVE</div>
+                    <div>AUTOMOTIVE</div>
+                    <div>AUTOMOTIVE</div>
                 </div>
             </div>
         </section>
@@ -162,10 +176,17 @@
 
             </div>
         </section>
-        <section class="tag-section automotive-tag">
+        <section class="tag-section electronics-tag">
 
             <div class="tag">
                 <div class="tag-image-con">
+                    <div>ELECTRONICS</div>
+                    <div>ELECTRONICS</div>
+                    <div>ELECTRONICS</div>
+                    <div>ELECTRONICS</div>
+                    <div>ELECTRONICS</div>
+                    <div>ELECTRONICS</div>
+                    <div>ELECTRONICS</div>
                     <div>ELECTRONICS</div>
                 </div>
             </div>
@@ -176,10 +197,17 @@
 
             </div>
         </section>
-        <section class="tag-section automotive-tag">
+        <section class="tag-section fashion-tag">
 
             <div class="tag">
                 <div class="tag-image-con">
+                    <div>FASHION</div>
+                    <div>FASHION</div>
+                    <div>FASHION</div>
+                    <div>FASHION</div>
+                    <div>FASHION</div>
+                    <div>FASHION</div>
+                    <div>FASHION</div>
                     <div>FASHION</div>
                 </div>
             </div>
@@ -190,10 +218,17 @@
 
             </div>
         </section>
-        <section class="tag-section automotive-tag">
+        <section class="tag-section sports-tag">
 
             <div class="tag">
                 <div class="tag-image-con">
+                    <div>SPORTS</div>
+                    <div>SPORTS</div>
+                    <div>SPORTS</div>
+                    <div>SPORTS</div>
+                    <div>SPORTS</div>
+                    <div>SPORTS</div>
+                    <div>SPORTS</div>
                     <div>SPORTS</div>
                 </div>
             </div>
@@ -204,11 +239,18 @@
 
             </div>
         </section>
-        <section class="tag-section automotive-tag">
+        <section class="tag-section stationery-tag">
 
             <div class="tag">
                 <div class="tag-image-con">
-                    <div>STATIONARY</div>
+                    <div>STATIONERY</div>
+                    <div>STATIONERY</div>
+                    <div>STATIONERY</div>
+                    <div>STATIONERY</div>
+                    <div>STATIONERY</div>
+                    <div>STATIONERY</div>
+                    <div>STATIONERY</div>
+                    <div>STATIONERY</div>
                 </div>
             </div>
         </section>
@@ -218,11 +260,39 @@
 
             </div>
         </section>
-        <section class="tag-section automotive-tag">
+        <section class="tag-section toys-tag">
 
             <div class="tag">
                 <div class="tag-image-con">
                     <div>TOYS</div>
+                    <div>TOYS</div>
+                    <div>TOYS</div>
+                    <div>TOYS</div>
+                    <div>TOYS</div>
+                    <div>TOYS</div>
+                    <div>TOYS</div>
+                    <div>TOYS</div>
+                </div>
+            </div>
+        </section>
+        <section class="deals-section">
+            <div class="deals-container">
+
+
+            </div>
+        </section>
+        <section class="tag-section giftCard-tag">
+
+            <div class="tag">
+                <div class="tag-image-con">
+                    <div>GIFTCARDS</div>
+                    <div>GIFTCARDS</div>
+                    <div>GIFTCARDS</div>
+                    <div>GIFTCARDS</div>
+                    <div>GIFTCARDS</div>
+                    <div>GIFTCARDS</div>
+                    <div>GIFTCARDS</div>
+                    <div>GIFTCARDS</div>
                 </div>
             </div>
         </section>
@@ -464,6 +534,7 @@
     </footer>
     <script src="products.js"></script>
     <script src="shop.js"></script>
+     <script src="common.js"></script>
 </body>
 
 </html>

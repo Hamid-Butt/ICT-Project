@@ -1,4 +1,5 @@
 const products = [
+
     {name : "Face Wash", companyName : "ORGATRE", category : "beauty",src : "assets/IMAGES/Beauty/antiaging Face wash.png",off: 10, trending: false,price : 1299, des : "lorem1234"},
     {name : "Body Lotion", companyName : "eos", category : "beauty",src : "assets/IMAGES/Beauty/Body lotion.png",off: 0, trending: false,price : 449, des : "lorem1234"},
     {name : "Body Scrub", companyName : "Dove", category : "beauty",src : "assets/IMAGES/Beauty/Body Scrub.png",off: 10, trending: false, price : 599, des : "lorem1234"},
