@@ -94,19 +94,40 @@ function productDes(productDisplay2) {
             e.style.color = "gray";
     }
     //Add to CArt Btn working of upper animation and Taking to login page
-    let username = "";
-    function addToCart(){
+    let userData = localStorage.getItem("username") ; //obj
+       userData = JSON.parse(userData);
+       if(userData){
+         if(Date.now() < userData.time + 1000*60*2){
+               let loginBtn = document.querySelector("#login");
+               loginBtn.innerText = userData.name;
+               loginBtn.style.color = "white";
+               loginBtn.style.pointerEvents = "none";
+               loginBtn.style.userSelect = "none";
+       }
+    }
+   function addToCart(){   
+       if(userData){
+           if(Date.now() < userData.time + 1000*60*2){
+               let loginBtn = document.querySelector("#login");
+               loginBtn.innerText = userData.name;
+               loginBtn.style.color = "white";
+               loginBtn.style.pointerEvents = "none";
+               loginBtn.style.userSelect = "none";
         //Copy from heartanimation section
-         document.querySelector(".favProducts").classList.add("favProducts-style");
+    document.querySelector(".favProducts").classList.add("favProducts-style");
      document.querySelector(".favProducts").querySelector("div").classList.add("favProducts-show");
      document.querySelector(".favProducts").querySelector("div").classList.remove("favProducts-hide");
-   if(username.length > 0){
      if(IncDeincInput.value > 0)
          document.querySelector(".favProducts").querySelector("div").innerHTML = "ADDED TO CART";
         else
              document.querySelector(".favProducts").querySelector("div").innerHTML = "SELECT QUANTITY OF PRODUCTS";
-   }
+    }else{
+        localStorage.removeItem("username");
+          window.location.href = "Login.html";
+    }
+    }
    else{
+    //Redirection
         window.location.href = "Login.html";
    }
      setTimeout(() => {
@@ -116,6 +137,8 @@ function productDes(productDisplay2) {
      document.querySelector(".favProducts").querySelector("div").classList.add("favProducts-hide");
    }, 500);
     } 
+
+   
 //Stoping Propogation of Child to Parent
 productClickChild.addEventListener("click", e => {
     e.stopPropagation();
