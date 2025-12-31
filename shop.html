@@ -51,7 +51,7 @@
     </header>
     <section class="favProducts ">
         <div class="favProducts-hide">
-            
+
         </div>
     </section>
     <section class="product-onclick">
@@ -62,17 +62,17 @@
             <div class="product-onclick-r-con  flex">
                 <h3></h3>
                 <div class="flex company-con" style="gap: 40px; position: relative; left: -12px; ">
-                    <div class="company-title"> 
+                    <div class="company-title">
                     </div>
                     <div class="company-name">
                     </div>
                 </div>
                 <div class="flex company-con" style="gap: 42px; position: relative; left: 9px;">
                     <div class="discount-title">
-                        
+
                     </div>
                     <div class="discount-name">
-                        
+
                     </div>
                 </div>
                 <div class="flex company-con" style="gap: 42px; position: relative;">
@@ -81,25 +81,72 @@
                     <div class="price-name">
                     </div>
                 </div>
-                
-                <div class="onclick-des"> 
-                  
+
+                <div class="onclick-des">
+
                 </div>
-                <div class="flex inc-deinc-box" >
-                    <div class="deinc-box" onclick="DeIncInput(this)">
-                        
+                <div class="flex inc-deinc-box">
+                    <div onclick="DeIncInput(this)" class="deinc-box">
+
                     </div>
                     <input type="text" id="inc-deinc-input" class="inc-deinc-input" value=1>
-                    <div class="inc-box" onclick="IncInput()">
-                        
+                    <div onclick="IncInput()" class="inc-box">
+
                     </div>
                 </div>
-                <div class="inputCountStorage" style="display: none;">0</div>
-                <div onclick="addToCart()">
-<!-- Add to cart btn -->
+                <div class="inputCountStorage" style="display: none;"></div>
+                <div onclick="addToCart(this)">
+                    <!-- Add to cart btn -->
                 </div>
             </div>
         </div>
+    </section>
+     <section class="cart-section cart-section-hide">
+        <button onclick="FinalizeFunc(this)" class="cart-btn btn">Finalize</button>
+        <div class="cart">
+            <div class="cart-card">
+                <div class="l-cart-card">
+                    <img src="" alt="">
+                </div>
+                <div class="r-cart-card">
+                    <div class="cart-name flex">
+                        <div>Product Name: </div>
+                        <div class="name"></div>
+                    </div>
+                    <div class="cart-company flex">
+                         <div>Company Name: </div>
+                        <div class="company"></div>
+                    </div>
+                    <div class="cart-price flex">
+                        <div>Price: </div>
+                        <div class="price flex" style="gap: 4px;"><sup>PKR</sup>
+                        <div>
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="flex cart-inc-deinc-box">
+                        <div onclick="cartDeIncInput(this)" class="cart-deinc-box">
+                            -
+                        </div>
+                        <input type="text" id="cart-input" class="cart-input">
+
+                        <div onclick="cartIncInput(this)" class="cart-inc-box">
+                            +
+                        </div>
+                    </div>
+                    <div class="cart-total">
+                        <div>Total Price: </div>
+                         <div class="flex" style="gap: 4px;">
+                            <sup>PKR </sup>
+                            <div class="total" ></div>
+                         </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
     </section>
     <main>
         <section class="hero">
