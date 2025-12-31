@@ -237,8 +237,125 @@ color: white;
     margin: 30px;
     background-color: #ddd;
 }
-.footer{
+/* .footer{
     text-align: center;
     margin: 0px ;
     padding: 10px ;
+} */
+ /* FOOTER */
+.main-footer {
+    background-color: #232F3E;
+}
+
+.main-footer ul {
+    font-size: 14px;
+}
+
+.main-footer ul li {
+    list-style: none;
+}
+
+.upper-footer-container {
+    width: 1000px;
+    padding: 50px 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.upper-footer-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    color: #DDDDDD;
+}
+
+.footer-social-con {
+    border-top: 1px solid #3a4553;
+}
+
+.footer-social {
+    width: 800px;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    left: -35px;
+}
+
+.footer-social-media {
+    width: 180px;
+    height: 50px;
+    background-image: url("assets/footer/social.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-lower {
+    margin-top: 25px;
+}
+
+.footer-cards {
+    position: relative;
+    left: 103px;
+    width: 125px;
+    height: 40px;
+    background-image: url("assets/footer/cards.png");
+    background-position: 50% 50%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+.lower-footer-con {
+    background-color: #131A22;
+
+}
+
+.lower-footer {
+    padding: 40px 0;
+    width: 1000px;
+    margin: auto;
+    color: #CCCCCC;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.footer-content-con {
+    font-size: 12px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-content-con div {
+    width: 125px;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+.footer-content-con div h5 {
+    color: #DDDDDD;
+    font-size: 12px;
+}
+
+.footer-content-con div h5:hover,
+.footer-content-con div p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: 12px;
+    border-top: 1px solid #3a4553;
+    padding-top: 5px;
+    height: 25px;
+    background-color: #131A22;
+    color: #DDDDDD;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
