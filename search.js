@@ -4,6 +4,8 @@ let NavInput = document.querySelector("#navbar-input");
 let NavBarSearch = localStorage.getItem("searchKeyword");
 let searchKeyWord =  NavInput.value = NavBarSearch;
 let searchProducts = [];
+let dealSection = document.querySelector(".deals-section");
+let productDisplay = document.querySelector(".deal-card");
 searchProductFinder();
 
 let searchIcon = document.querySelector(".fa-magnifying-glass");
@@ -28,22 +30,25 @@ function searchProductFinder(){
         if (!Object.hasOwn(obj, key)) continue;
         
         let element = obj[key];
-        if( typeof element === "string")
-            if(element.toLowerCase().trim().replace(/\s+/g,'').includes(searchKeyWord))
-                 if(!searchProducts.includes(obj)){
+        if( typeof element === "string"){
+             if(element.toLowerCase().trim().replace(/\s+/g,'').includes(searchKeyWord)){
+                if(!searchProducts.includes(obj)){
                     searchProducts.push(obj)
                  }
-                     
+            }   
+        }
+             
     }
 });
-
 //Showing searched products
-let dealSection = document.querySelector(".deals-section");
-let productDisplay = document.querySelector(".deal-card");//innerHtml is a text and we cant clone that
+
 dealSection.innerHTML = "";
-searchProducts.forEach(obj=>{
+if(searchProducts.length > 0){
+    searchProducts.forEach(obj=>{
                 createProductsDisplay(obj, productDisplay,dealSection);
 })
+}else
+    alert("No Matched Found");
 }
 function createProductsDisplay(obj, productDisplay,dealSection) {
     let newProductDisplay = productDisplay.cloneNode(true);
@@ -70,6 +75,7 @@ function createProductsDisplay(obj, productDisplay,dealSection) {
     }
     newProductDisplay.querySelector(".deal-hidden").querySelector("span").innerText = JSON.stringify(obj);
     dealSection.insertAdjacentElement("beforeend", newProductDisplay);
+    NavInput.value = "";
 }
 
 

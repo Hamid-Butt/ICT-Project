@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="utility.css">
 </head>
+
 <body>
-      <header>
+     <header>
         <nav>
             <div class="left-nav">
                 <div class="logo">
@@ -40,16 +41,17 @@
                     </ul>
                     <ul class=" flex">
                         <li><a href="Login.html" id="login" class="nav-buttons">Login</a></li>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-cart-shopping" ></i>
                     </ul>
                 </div>
-            </div>
+            </div> 
         </nav>
         <div class="nav-spacer"></div>
-    </header>
-     <section class="favProducts ">
+    </header> 
+    
+    <section class="favProducts ">
         <div class="favProducts-hide">
-            
+
         </div>
     </section>
     <section class="product-onclick">
@@ -60,17 +62,17 @@
             <div class="product-onclick-r-con  flex">
                 <h3></h3>
                 <div class="flex company-con" style="gap: 40px; position: relative; left: -12px; ">
-                    <div class="company-title"> 
+                    <div class="company-title">
                     </div>
                     <div class="company-name">
                     </div>
                 </div>
                 <div class="flex company-con" style="gap: 42px; position: relative; left: 9px;">
                     <div class="discount-title">
-                        
+
                     </div>
                     <div class="discount-name">
-                        
+
                     </div>
                 </div>
                 <div class="flex company-con" style="gap: 42px; position: relative;">
@@ -79,192 +81,96 @@
                     <div class="price-name">
                     </div>
                 </div>
-                
-                <div class="onclick-des"> 
-                  
+
+                <div class="onclick-des">
+
                 </div>
-                <div class="flex inc-deinc-box" >
-                    <div class="deinc-box" onclick="DeIncInput(this)">
-                        
+                <div class="flex inc-deinc-box">
+                    <div onclick="DeIncInput(this)" class="deinc-box">
+
                     </div>
                     <input type="text" id="inc-deinc-input" class="inc-deinc-input" value=1>
-                    <div class="inc-box" onclick="IncInput()">
-                        
+                    <div onclick="IncInput()" class="inc-box">
+
                     </div>
                 </div>
-                <div onclick="addToCart()">
-<!-- Add to cart btn -->
+                <div class="inputCountStorage" style="display: none;"></div>
+                <div onclick="addToCart(this)">
+                    <!-- Add to cart btn -->
                 </div>
             </div>
         </div>
     </section>
-    <main>
-         <section class="deals-section">
-            <div class="deal-card" onclick="productDes(this)">
+    <section class="cart-section cart-section-hide">
+        <div class="cart">
+            <div class="cart-card">
+                <div class="l-cart-card">
                     <img src="" alt="">
-                    <div class="deal-hidden" style="display: none;">
-                        <span></span>
+                </div>
+                <div class="r-cart-card">
+                    <div class="cart-name flex">
+                        <div>Product Name: </div>
+                        <div class="name"></div>
                     </div>
-                    <span class="off">
-                        
-                    </span>
-                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
-                    <div class="deal-name">
+                    <div class="cart-company flex">
+                         <div>Company Name: </div>
+                        <div class="company"></div>
+                    </div>
+                    <div class="cart-price flex">
+                        <div>Price: </div>
+                        <div class="price flex" style="gap: 4px;"><sup>PKR</sup>
+                        <div>
 
+                        </div>
+                        </div>
                     </div>
-                    <div class="deal-price flex">
-                        <span class="cut-price"
-                            style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
-                                
-                            </span></span>
-                        <span class="rem-price"><sup>PKR</sup><span>
-                            
-                            </span></span>
+                    <div class="flex cart-inc-deinc-box">
+                        <div onclick="cartDeIncInput(this)" class="cart-deinc-box">
+                            -
+                        </div>
+                        <input type="text" id="cart-input" class="cart-input">
+
+                        <div onclick="cartIncInput(this)" class="cart-inc-box">
+                            +
+                        </div>
                     </div>
-                </div>
-            <div class="deal-card" onclick="productDes(this)">
-                    <img src="assets/IMAGES/Automotive/Blind Spot mirror.png" alt="">
-                    <div class="deal-hidden" style="display: none;">
-                        <span></span>
-                    </div>
-                    <span class="off">
-                        20% off
-                    </span>
-                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
-                    <div class="deal-name">Mirror</div>
-                    <div class="deal-price flex">
-                        <span class="cut-price"
-                            style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
-                                1299
-                            </span></span>
-                        <span class="rem-price"><sup>PKR</sup><span>
-                            1099
-                            </span></span>
-                    </div>
-                </div>
-            <div class="deal-card" onclick="productDes(this)">
-                    <img src="assets/IMAGES/Automotive/Blind Spot mirror.png" alt="">
-                    <div class="deal-hidden" style="display: none;">
-                        <span></span>
-                    </div>
-                    <span class="off">
-                        20% off
-                    </span>
-                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
-                    <div class="deal-name">Mirror</div>
-                    <div class="deal-price flex">
-                        <span class="cut-price"
-                            style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
-                                1299
-                            </span></span>
-                        <span class="rem-price"><sup>PKR</sup><span>
-                            1099
-                            </span></span>
-                    </div>
-                </div>
-            <div class="deal-card" onclick="productDes(this)">
-                    <img src="assets/IMAGES/Automotive/Blind Spot mirror.png" alt="">
-                    <div class="deal-hidden" style="display: none;">
-                        <span></span>
-                    </div>
-                    <span class="off">
-                        20% off
-                    </span>
-                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
-                    <div class="deal-name">Mirror</div>
-                    <div class="deal-price flex">
-                        <span class="cut-price"
-                            style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
-                                1299
-                            </span></span>
-                        <span class="rem-price"><sup>PKR</sup><span>
-                            1099
-                            </span></span>
-                    </div>
-                </div>
-            <div class="deal-card" onclick="productDes(this)">
-                    <img src="assets/IMAGES/Automotive/Blind Spot mirror.png" alt="">
-                    <div class="deal-hidden" style="display: none;">
-                        <span></span>
-                    </div>
-                    <span class="off">
-                        20% off
-                    </span>
-                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
-                    <div class="deal-name">Mirror</div>
-                    <div class="deal-price flex">
-                        <span class="cut-price"
-                            style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
-                                1299
-                            </span></span>
-                        <span class="rem-price"><sup>PKR</sup><span>
-                            1099
-                            </span></span>
-                    </div>
-                </div>
-            <div class="deal-card" onclick="productDes(this)">
-                    <img src="assets/IMAGES/Automotive/Blind Spot mirror.png" alt="">
-                    <div class="deal-hidden" style="display: none;">
-                        <span></span>
-                    </div>
-                    <span class="off">
-                        20% off
-                    </span>
-                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
-                    <div class="deal-name">Mirror</div>
-                    <div class="deal-price flex">
-                        <span class="cut-price"
-                            style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
-                                1299
-                            </span></span>
-                        <span class="rem-price"><sup>PKR</sup><span>
-                            1099
-                            </span></span>
-                    </div>
-                </div>
-            <div class="deal-card" onclick="productDes(this)">
-                    <img src="assets/IMAGES/Automotive/Blind Spot mirror.png" alt="">
-                    <div class="deal-hidden" style="display: none;">
-                        <span></span>
-                    </div>
-                    <span class="off">
-                        20% off
-                    </span>
-                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
-                    <div class="deal-name">Mirror</div>
-                    <div class="deal-price flex">
-                        <span class="cut-price"
-                            style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
-                                1299
-                            </span></span>
-                        <span class="rem-price"><sup>PKR</sup><span>
-                            1099
-                            </span></span>
-                    </div>
-                </div>
-            <div class="deal-card" onclick="productDes(this)">
-                    <img src="assets/IMAGES/Automotive/Blind Spot mirror.png" alt="">
-                    <div class="deal-hidden" style="display: none;">
-                        <span></span>
-                    </div>
-                    <span class="off">
-                        20% off
-                    </span>
-                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
-                    <div class="deal-name">Mirror</div>
-                    <div class="deal-price flex">
-                        <span class="cut-price"
-                            style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
-                                1299
-                            </span></span>
-                        <span class="rem-price"><sup>PKR</sup><span>
-                            1099
-                            </span></span>
-                    </div>
+                    <div class="cart-total">
+                        <div>Total Price: </div>
+                         <div class="flex" style="gap: 4px;">
+                            <sup>PKR </sup>
+                            <div class="total" ></div>
+                         </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="deals-section">
+            <div class="deal-card" onclick="productDes(this)">
+                <img src="" alt="">
+                <div class="deal-hidden" style="display: none;">
+                    <span></span>
+                </div>
+                <span class="off">
+
+                </span>
+                <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
+                <div class="deal-name">
+
+                </div>
+                <div class="deal-price flex">
+                    <span class="cut-price" style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
+
+                        </span></span>
+                    <span class="rem-price"><sup>PKR</sup><span>
+
+                        </span></span>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
 
         <div class="main-footer">
@@ -493,8 +399,10 @@
         </div>
 
     </footer>
+
     <script src="products.js"></script>
-        <script src="commonSearch.js"></script>
+    <script src="commonSearch.js"></script>
     <script src="search.js"></script>
 </body>
+
 </html>
