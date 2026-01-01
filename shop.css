@@ -280,6 +280,143 @@ nav {
 .inc-deinc-input-show{
     display: inline;
 }
+/* ADD TO CART SECTION */
+.cart-section {
+    width: 100%;
+    min-height: 87vh;
+    max-height: calc(100vh - 100px);
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    z-index: 999;
+    overflow-y: scroll; 
+    scrollbar-width: none;
+}
+
+.cart-section-hide {
+    transform: translateX(1800px);
+}
+
+.cart-section-show {
+    transform: translateX(0px);
+
+}
+
+.cart {
+    width: 1000px;
+    /* height: 620px; */
+    padding: 20px;
+    background-color: #232F3E;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+
+}
+
+.cart-card {
+    height: 160px;
+    width: 750px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.cart-card img {
+    object-position: top;
+    width: 190px;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.l-cart-card {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-btn{
+    position: absolute;
+    right: 273px;
+    bottom: 18px;
+    width: 90px;
+    border: 2px solid;
+    border-radius: 999px;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+    transition: color 0.2s, background-color 0.2s;
+}
+.cart-btn:active{
+      background-color: #DDDDDD;
+    color: #232F3E;
+}
+.r-cart-card {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.cart-name {
+    gap: 20px;
+}
+
+.cart-company {
+    gap: 24px;
+}
+
+.cart-price {
+    gap: 20px;
+    position: relative;
+    left: 23px;
+}
+
+.cart-inc-deinc-box {
+    align-items: center;
+}
+
+.cart-inc-box,
+.cart-deinc-box {
+    height: 20px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+#cart-input {
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    padding: 10px 0px;
+    outline: none;
+}
+
+.cart-total {
+    position: relative;
+    bottom: -10px;
+    right: -80px;
+}
 /* MAIN */
 
 .hero {

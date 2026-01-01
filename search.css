@@ -373,7 +373,21 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
+.cart-btn{
+    position: absolute;
+    right: 273px;
+    bottom: 18px;
+    width: 90px;
+    border: 2px solid;
+    border-radius: 999px;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+    transition: color 0.2s, background-color 0.2s;
+}
+.cart-btn:active{
+      background-color: #DDDDDD;
+    color: #232F3E;
+}
 .r-cart-card {
     width: 70%;
     height: 100%;

@@ -79,13 +79,6 @@ function productDes(productDisplay2) {
     productClickRight.querySelector(".inc-box").innerText = "+";
     productClickRight.querySelector(".inputCountStorage").innerText = JSON.stringify(temObj);
 
-    // if(temObj.count > 0){
-    //     //if true then means some quantity of product has been added to cart
-    //     IncDeincInput.value = temObj.count;
-    // }else{
-    //     IncDeincInput.value = 1;
-
-    // }
     IncDeincInput.classList.replace("inc-deinc-input", "inc-deinc-input-show");
     productClickRight.querySelector(".deinc-box").innerText = "-";
     productClickRight.lastElementChild.classList.add("onclick-btn", "btn");
@@ -249,7 +242,23 @@ cartSection.addEventListener("click",e=>{
     document.body.style.overflow = "auto";
 })
 
-//Adding Data in Cart
+//Final Output Function
+let finalValueArr = [];
+function FinalizeFunc(btn){
+    let FCartSec = btn.closest(".cart-section");
+    let FCartCard = FCartSec.querySelectorAll(".cart-card");
+    FCartCard.forEach(card=>{
+     let FTotal = card.querySelector(".cart-total").querySelector(".total");
+     finalValueArr.push(Number(FTotal.innerText));
+    })
+    let sum = 0;
+    finalValueArr.forEach(e=>{
+        sum += e;
+    })
+    alert(`Your Final Amount is ${sum}`);
+    finalValueArr = [];
+    ProductsOnAddToCArt = [];
+}
 
 
 
@@ -296,3 +305,4 @@ productClick.addEventListener("click", e => {
     productClickRight.lastElementChild.innerText = "";
     document.body.style.overflow = "auto";
 })
+
