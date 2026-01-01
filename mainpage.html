@@ -30,14 +30,14 @@
             </div>
             <div class="right-nav">
                 <div class="nav-input">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" id="navbar-input" placeholder=" Search the Products">
                 </div>
                 <div class="nav-buttons-con flex">
                     <ul class=" flex">
                          <li><a  href="mainpage.html" id="home" class="home-line">Home</a></li><!-- home is not in nav-buttons cuz we want that home does not have line when other btns hovered -->
                         <li ><a href="shop.html" id="shop" class="nav-buttons">Shop</a></li>
-                        <li ><a href="category.html" id="categories" class="nav-buttons">Categories</a></li>
+                        <li ><a href="collection.html" id="collections" class="nav-buttons">Collections</a></li>
                     </ul>
                     <ul class=" flex">
                         <li><a href="Login.html" id="login" class="nav-buttons">Login</a></li>
@@ -93,6 +93,7 @@
                         
                     </div>
                 </div>
+                <div class="inputCountStorage" style="display: none;">0</div>
                 <div onclick="addToCart()">
 <!-- Add to cart btn -->
                 </div>
@@ -472,6 +473,7 @@
     </footer>
     <script src="products.js"></script>
     <script src="mainpage.js"></script>
+    <script src="commonSearch.js"></script>
     <script src="common.js"></script>
 </body>
 

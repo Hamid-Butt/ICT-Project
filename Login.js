@@ -1,6 +1,10 @@
 let username = {};
 let usernameInput = document.querySelector("#usernameInput");
-
+usernameInput.addEventListener("keydown",(e)=>{
+    if(e.key === "Enter"){
+        addingUserName();
+    }
+})
 function addingUserName(){
     if(usernameInput.value.length > 0){
 username.name = usernameInput.value;

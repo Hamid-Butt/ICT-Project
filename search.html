@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PakKart</title>
+    <title>PakKart Search</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
@@ -14,12 +14,12 @@
     <meta name="apple-mobile-web-app-title" content="PakKart" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <!-- STYLESHEETTS   -->
-    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="utility.css">
 </head>
 
 <body>
-    <header>
+     <header>
         <nav>
             <div class="left-nav">
                 <div class="logo">
@@ -30,28 +30,28 @@
             </div>
             <div class="right-nav">
                 <div class="nav-input">
-                      <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" id="navbar-input" placeholder=" Search the Products">
                 </div>
                 <div class="nav-buttons-con flex">
                     <ul class=" flex">
-                        <li><a href="mainpage.html" id="home" class="nav-buttons">Home</a></li>
-                        <li><a href="shop.html" id="shop" class="home-line">Shop</a></li>
-                        <!-- home is not in nav-buttons cuz we want that home does not have line when other btns hovered -->
+                        <li><a href="mainpage.html"  class="nav-buttons">Home</a></li>
+                        <li><a href="shop.html"  class="nav-buttons"  >Shop</a></li>
                         <li><a href="collection.html" id="collections" class="nav-buttons">Collections</a></li>
                     </ul>
                     <ul class=" flex">
                         <li><a href="Login.html" id="login" class="nav-buttons">Login</a></li>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-cart-shopping" ></i>
                     </ul>
                 </div>
-            </div>
+            </div> 
         </nav>
         <div class="nav-spacer"></div>
-    </header>
+    </header> 
+    
     <section class="favProducts ">
         <div class="favProducts-hide">
-            
+
         </div>
     </section>
     <section class="product-onclick">
@@ -62,17 +62,17 @@
             <div class="product-onclick-r-con  flex">
                 <h3></h3>
                 <div class="flex company-con" style="gap: 40px; position: relative; left: -12px; ">
-                    <div class="company-title"> 
+                    <div class="company-title">
                     </div>
                     <div class="company-name">
                     </div>
                 </div>
                 <div class="flex company-con" style="gap: 42px; position: relative; left: 9px;">
                     <div class="discount-title">
-                        
+
                     </div>
                     <div class="discount-name">
-                        
+
                     </div>
                 </div>
                 <div class="flex company-con" style="gap: 42px; position: relative;">
@@ -81,230 +81,96 @@
                     <div class="price-name">
                     </div>
                 </div>
-                
-                <div class="onclick-des"> 
-                  
+
+                <div class="onclick-des">
+
                 </div>
-                <div class="flex inc-deinc-box" >
-                    <div class="deinc-box" onclick="DeIncInput(this)">
-                        
+                <div class="flex inc-deinc-box">
+                    <div onclick="DeIncInput(this)" class="deinc-box">
+
                     </div>
                     <input type="text" id="inc-deinc-input" class="inc-deinc-input" value=1>
-                    <div class="inc-box" onclick="IncInput()">
-                        
+                    <div onclick="IncInput()" class="inc-box">
+
                     </div>
                 </div>
-                <div class="inputCountStorage" style="display: none;">0</div>
-                <div onclick="addToCart()">
-<!-- Add to cart btn -->
+                <div class="inputCountStorage" style="display: none;"></div>
+                <div onclick="addToCart(this)">
+                    <!-- Add to cart btn -->
                 </div>
             </div>
         </div>
     </section>
-    <main>
-        <section class="hero">
-            <div class="hero-section">
-                <div class="hero-image-con">
-                    <div style="background-image: url('assets/hero-section/img1.jpg');"></div>
-                    <div style="background-image: url('assets/hero-section/img2.jpg');"></div>
-                    <div style="background-image: url('assets/hero-section/img4.jpg');"></div>
-                    <div style="background-image: url('assets/hero-section/img5.jpg');"></div>
-                    <div style="background-image: url('assets/hero-section/img3.jpg');"></div>
-                    <div style="background-image: url('assets/hero-section/img7.jpg');"></div>
-                    <div style="background-image: url('assets/hero-section/img6.jpg');"></div>
-                    <div style="background-image: url('assets/hero-section/img8.jpg');"></div>
-                </div>
-            </div>
-        </section>
-        <section class="tag-section tag-section-absolute beauty-tag">
-
-            <div class="tag">
-                <div class="tag-image-con">
-                    <div>BEAUTY</div>
-                    <div>MAKE YOU BEAUTIFUL</div>
-                    <div>ELEGANCE</div>
-                    <div>SELF-LOVE</div>
-                    <div>YOUR DAILY DOSE OF GLOW</div>
-                    <div>BEAUTY</div>
-                    <div>RADIENT</div>
-                    <div>SHINE CONFIDENTLY</div>
-                </div>
-            </div>
-        </section>
-        <section class="deals-section">
-            <div class="deals-container">
-                <div class="deal-card" onclick="productDes(this)">
+    <section class="cart-section cart-section-hide">
+        <div class="cart">
+            <div class="cart-card">
+                <div class="l-cart-card">
                     <img src="" alt="">
-                    <div class="deal-hidden" style="display: none;">
-                        <span></span>
+                </div>
+                <div class="r-cart-card">
+                    <div class="cart-name flex">
+                        <div>Product Name: </div>
+                        <div class="name"></div>
                     </div>
-                    <span class="off">
-
-                    </span>
-                    <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
-                    <div class="deal-name"></div>
-                    <div class="deal-price flex">
-                        <span class="cut-price"
-                            style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
-
-                            </span></span>
-                        <span class="rem-price"><sup>PKR</sup><span>
-
-                            </span></span>
+                    <div class="cart-company flex">
+                         <div>Company Name: </div>
+                        <div class="company"></div>
                     </div>
+                    <div class="cart-price flex">
+                        <div>Price: </div>
+                        <div class="price flex" style="gap: 4px;"><sup>PKR</sup>
+                        <div>
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="flex cart-inc-deinc-box">
+                        <div onclick="cartDeIncInput(this)" class="cart-deinc-box">
+                            -
+                        </div>
+                        <input type="text" id="cart-input" class="cart-input">
+
+                        <div onclick="cartIncInput(this)" class="cart-inc-box">
+                            +
+                        </div>
+                    </div>
+                    <div class="cart-total">
+                        <div>Total Price: </div>
+                         <div class="flex" style="gap: 4px;">
+                            <sup>PKR </sup>
+                            <div class="total" ></div>
+                         </div>
                 </div>
 
             </div>
-        </section>
-        <section class="tag-section automotive-tag">
-
-            <div class="tag">
-                <div class="tag-image-con">
-                     <div>AUTOMOTIVE</div>
-                    <div>PRECISION IN EVERY MOVE</div>
-                    <div>RELIABILITY</div>
-                    <div>EXPERT CARE FOR YOUR VEHICLE</div>
-                    <div>AUTOMOTIVE</div>
-                    <div>KEEPING YOU ROAD-READY</div>
-                    <div>INNOVATION</div>
-                    <div>YOUR CAR, OUR RESPONSIBLITY</div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
+    <main>
         <section class="deals-section">
-            <div class="deals-container">
+            <div class="deal-card" onclick="productDes(this)">
+                <img src="" alt="">
+                <div class="deal-hidden" style="display: none;">
+                    <span></span>
+                </div>
+                <span class="off">
 
+                </span>
+                <i class="fa-solid fa-heart white-heart" onclick="redHeart(event,this)"></i>
+                <div class="deal-name">
 
-            </div>
-        </section>
-        <section class="tag-section electronics-tag">
+                </div>
+                <div class="deal-price flex">
+                    <span class="cut-price" style="text-decoration: line-through; color: #b12704 ;"><sup>PKR</sup><span>
 
-            <div class="tag">
-                <div class="tag-image-con">
-                     <div>ELECTRONICS</div>
-                    <div>THINK SMART,LIVE SMARTER</div>
-                    <div>DIGITAL</div>
-                    <div>ELECTRONICS</div>
-                    <div>FUTURE</div>
-                    <div>THE FUTURE STARTS HERE</div>
-                    <div>ADVANCED</div>
-                    <div>INNOVATION YOU CAN TRUST</div>
+                        </span></span>
+                    <span class="rem-price"><sup>PKR</sup><span>
+
+                        </span></span>
                 </div>
             </div>
         </section>
-        <section class="deals-section">
-            <div class="deals-container">
-
-
-            </div>
-        </section>
-        <section class="tag-section fashion-tag">
-
-            <div class="tag">
-                <div class="tag-image-con">
-                     <div>FASHION</div>
-                    <div>STYLE THAT SPEAKS</div>
-                    <div>WEAR YOUR CONFIDENCE</div>
-                    <div>GLAM</div>
-                    <div>FASHION</div>
-                    <div>TREND</div>
-                    <div>MADE TO STAND OUT</div>
-                    <div>STYLE</div>
-                </div>
-            </div>
-        </section>
-        <section class="deals-section">
-            <div class="deals-container">
-
-
-            </div>
-        </section>
-        <section class="tag-section sports-tag">
-
-            <div class="tag">
-                <div class="tag-image-con">
-                    <div>SPORTS</div>
-                    <div>PLAY WITH PASSION</div>
-                    <div>POWER</div>
-                    <div>UNLEASH YOUR POTENTIAL</div>
-                    <div>VICTORY</div>
-                    <div>SPORTS</div>
-                    <div>FUEL YOUR GAME</div>
-                    <div>STRENGTH</div>
-                </div>
-            </div>
-        </section>
-        <section class="deals-section">
-            <div class="deals-container">
-
-
-            </div>
-        </section>
-        <section class="tag-section stationery-tag">
-
-            <div class="tag">
-                <div class="tag-image-con">
-                   <div>STATIONERY</div>
-                    <div>INSPIRE</div>
-                    <div>PLAN BETTER</div>
-                    <div>ORGANIZE</div>
-                    <div>STATIONERY</div>
-                    <div>IMAGINE</div>
-                    <div>EVERY DETAIL MATTERS</div>
-                    <div>BRING IDEAS TO LIFE</div>
-                </div>
-            </div>
-        </section>
-        <section class="deals-section">
-            <div class="deals-container">
-
-
-            </div>
-        </section>
-        <section class="tag-section toys-tag">
-
-            <div class="tag">
-                <div class="tag-image-con">
-                   <div>TOYS</div>
-                    <div>WHERE FUN BEGINS</div>
-                    <div>EXPLORE</div>
-                    <div>JOY IN EVERY TOY</div>
-                    <div>TOYS</div>
-                    <div>GAMES FOR ENDLESS SMILES</div>
-                    <div>LEARN WHILE YOU PLAY</div>
-                    <div>CREATIVITY</div>
-                </div>
-            </div>
-        </section>
-        <section class="deals-section">
-            <div class="deals-container">
-
-
-            </div>
-        </section>
-        <section class="tag-section giftCard-tag">
-
-            <div class="tag">
-                <div class="tag-image-con">
-                    <div>GIFTCARDS</div>
-                    <div>A SMALL CARD, A BIG SMILE</div>
-                    <div>CELEBRATE</div>
-                    <div>SHOW SOMEONE YOU CARE</div>
-                    <div>GIFTCARDS</div>
-                    <div>JOY IN EVERY CARD</div>
-                    <div>SURPRISE</div>
-                    <div>GIVE THE PERFECT GIFT</div>
-                </div>
-            </div>
-        </section>
-        <section class="deals-section">
-            <div class="deals-container">
-
-
-            </div>
-        </section>
-
     </main>
+
     <footer>
 
         <div class="main-footer">
@@ -533,10 +399,10 @@
         </div>
 
     </footer>
+
     <script src="products.js"></script>
-    <script src="shop.js"></script>
-     <script src="common.js"></script>
-     <script src="commonSearch.js"></script>
+    <script src="commonSearch.js"></script>
+    <script src="search.js"></script>
 </body>
 
 </html>
